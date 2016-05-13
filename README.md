@@ -23,3 +23,6 @@ var reciever = new AVReciever('ip_address');
 reciever.powerOn();
 ```
 
+## TODOs
+
+- Add HTTP request parameter for zone selection: ZoneName=(ZONE1|ZONE2|ZONE3)
