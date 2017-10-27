@@ -21,6 +21,16 @@ describe('AVReciever', function() {
     })
   });
 
+  describe('input functions', function() {
+    it('should hide buggy CBL/SAT return value', function() {
+      return receiver.setInputSource(AVReceiver.Sources.CBL_SAT).then(function() {
+        return receiver.getInputSource().then(function(source) {
+          source.should.be.exactly(AVReceiver.Sources.CBL_SAT);
+        });
+      });
+    });
+  });
+
   describe('power functions', function() {
     it('should power off', function() {
       this.timeout(15000);
