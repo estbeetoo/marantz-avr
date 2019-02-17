@@ -1,6 +1,6 @@
 {
   "name": "marantz-avr",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Marantz ARV Control Library",
   "main": "index.js",
   "scripts": {
